@@ -1,24 +1,5 @@
-# README
+# CARONASBRAZ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+CaronasBraz é uma ideia simples para auxiliar as pessoas da cidade onde moro a procurarem caronas que as levem com destino principalmente ao trabalho.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Basicamente o motorista que possui carro e vai trabalhar, oferece carona para outras pessoas que irão para mesmo destino.
