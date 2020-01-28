@@ -1,5 +1,5 @@
 class RidesController < ApplicationController
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
   before_action :set_ride, only: [:show, :update, :destroy]
 
   # GET /rides
@@ -47,6 +47,6 @@ class RidesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def ride_params
-      params.require(:ride).permit(:origin, :destiny, :departure_time, :vacancies)
+      params.require(:ride).permit(:origin, :destiny, :departure_time, :vacancies, :user_id)
     end
 end

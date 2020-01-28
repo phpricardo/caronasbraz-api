@@ -20,14 +20,16 @@ ActiveRecord::Schema.define(version: 2020_01_03_002733) do
     t.string "destiny"
     t.datetime "departure_time"
     t.integer "vacancies"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_rides_on_user_id"
   end
 
   create_table "user_profiles", force: :cascade do |t|
     t.string "birthday"
     t.string "gender"
-    t.boolean "profile"
+    t.string "profile"
     t.string "document"
     t.string "car_model"
     t.string "name_car"
@@ -70,5 +72,6 @@ ActiveRecord::Schema.define(version: 2020_01_03_002733) do
     t.index ["uid", "provider"], name: "index_users_on_uid_and_provider", unique: true
   end
 
+  add_foreign_key "rides", "users"
   add_foreign_key "user_profiles", "users"
 end

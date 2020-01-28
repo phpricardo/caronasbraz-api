@@ -3,7 +3,7 @@ class CreateUserProfiles < ActiveRecord::Migration[6.0]
     create_table :user_profiles do |t|
       t.string :birthday
       t.string :gender
-      t.boolean :profile
+      t.string :profile
       t.string :document
       t.string :car_model
       t.string :name_car
