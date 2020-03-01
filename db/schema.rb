@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2020_01_03_002733) do
   create_table "rides", force: :cascade do |t|
     t.string "origin"
     t.string "destiny"
-    t.datetime "departure_time"
+    t.string "departure_time"
     t.integer "vacancies"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
